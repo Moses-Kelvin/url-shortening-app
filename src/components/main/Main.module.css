@@ -1,0 +1,100 @@
+main {
+    background: hsl(228, 33%, 97%);
+}
+
+.article-container {
+    display: flex;
+    column-gap: 2rem;
+    justify-content: center;
+    padding-bottom: 6rem;
+}
+
+.article-container div:nth-child(1) {
+    transform: translateY(-5rem);
+    animation-name: article1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes article1 {
+   0% {transform: translateY(0);}
+   100% {transform: translateY(-5rem);}
+}
+
+.article-container div:nth-child(2) {
+    transform: translateY(-3.2rem);
+    animation-name: article2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes article2 {
+    0% {transform: translateY(0);}
+    100% {transform: translateY(-3.2rem);}
+}
+
+.article-container div:nth-child(3) {
+    transform: translateY(-2rem);
+    animation-name: article3;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes article3 {
+    0% {transform: translateY(0);}
+    100% {transform: translateY(-2rem);}
+}
+
+.horizontal-line {
+    width: 50rem;
+    height: 0.4rem;
+    margin: auto;
+    background-color: hsl(180, 66%, 49%);
+}
+
+.Msg {
+    text-align: center;
+    animation-name: Msg;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes Msg {
+    0% {color: grey; letter-spacing: 0;}
+    25% {color: blue; letter-spacing: 0.5px;}
+    50% {color: red; letter-spacing: 1px;}
+    75% {color: greenyellow; letter-spacing: 1.5px;}
+    100% {color: grey; letter-spacing: 0;}
+}
+
+.error {
+    text-align: center;
+    color: red;
+}
+
+ 
+@media (max-width: 500px) {
+    .article-container {
+        flex-direction: column;
+        width: fit-content;
+        margin: auto;
+    }
+
+    .article-container div:nth-child(1),
+    .article-container div:nth-child(2),
+    .article-container div:nth-child(3) {
+        margin-top: 0;
+        margin-bottom: 5rem;
+    }
+
+    .horizontal-line {
+        height: 57rem;
+        width: 1rem;
+        margin-bottom: -57rem;
+    }
+
+     .Msg {
+         margin-top: -2rem;
+         font-size: 1.8rem;
+     }
+}

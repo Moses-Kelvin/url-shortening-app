@@ -1,0 +1,49 @@
+.article {
+    width: 22rem;
+    height: 11rem;
+}
+
+.article>img {
+    background-color: hsl(255, 11%, 22%);
+    border-radius: 50%;
+    padding: 0.5rem;
+    margin: -1.5rem 0 0 1.3rem;
+}
+
+.article>p {
+    color: hsl(0, 0%, 75%);
+    font-size: 0.8rem;
+    padding: 0 0.5rem 0 1rem;
+}
+
+.article>h3 {
+    font-size: 0.95rem;
+    padding-left: 1rem;
+}
+
+@media (max-width: 500px) {
+    .article {
+        display: grid;
+        width: 33rem;
+        height: fit-content;
+        justify-items: center;
+    }
+
+    .article>img {
+        padding: 2rem;
+    }
+
+    .article>h3 {
+        font-size: 2rem;
+    }
+
+    .article > p {
+        font-size: 1.45rem;
+        margin-top: 0;
+        text-align: center;
+        line-height: 1.5;
+        max-width: 25rem;
+        padding-bottom: 1rem;
+    }
+
+}

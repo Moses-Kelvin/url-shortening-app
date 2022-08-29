@@ -1,0 +1,31 @@
+.summary {
+    display: grid;
+    width: 50rem;
+    margin: auto;
+    padding: 2rem 0 8rem 0;
+}
+
+.summary > p {
+    max-width: 23rem;
+    font-size: 0.9rem;
+    justify-self: center;
+    text-align: center;
+    line-height: 1.5;
+    color: hsl(0, 0%, 75%);
+    margin-top: 0;
+}
+
+.summary > h1 {
+    text-align: center;
+}
+
+@media (max-width: 500px) {
+    .summary > h1  {
+        font-size: 3rem;
+    }
+
+    .summary > p {
+        font-size: 1.8rem;
+        max-width: 30rem;
+    }
+}
